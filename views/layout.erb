@@ -5,14 +5,29 @@
  <meta charSet="utf-8"/>
  <meta name="viewport" content="width=device-width, initial-scale=1" />
  <meta name="description" content="Here is a description of what Givelist is all about."/>
- <link href="<%= url('/styles/main.css') %>" rel="stylesheet" type="text/css" />
+ <link href="<%= url('public/styles/normalize.scss') %>" rel="stylesheet" type="text/css" />
+ <link href="<%= url('public/styles/main.scss') %>" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+ <div class="content">
+  <header>
+   <span>givelist</span>
+   <a class="button" href="#">Sign Up</a>
+   <a class="button" href="#">Log In</a>   
+  </header>
 
-<p>layout</p>
- <%= yield %>
+  <main>
+   <%= yield %>
+  </main>
 
-
+  <footer>
+   <p>
+    <span>© 2018 Givelist, Inc.</span>
+    <a href="#">Legal</a>
+    <a href="#">Privacy Policy</a>
+   </p>
+  </footer>
+ </div>
 </body>
 </html>

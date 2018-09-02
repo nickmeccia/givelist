@@ -1,5 +1,6 @@
 # givelist-prototype
 
-$ Gem install sinatra
+$ gem install sinatra
+$ gem install sass
 ruby givelist.rb
-localhost:4567/givelist.rb
+localhost:4567

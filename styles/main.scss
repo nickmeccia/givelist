@@ -1,0 +1,49 @@
+@import "modules/palette";
+@import "modules/typography";
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $white;
+  color: $black;
+  font-family: 'SourceSansPro-Light', sans-serif;
+  /*line-height: 1.5125rem;*/
+}
+
+::selection {
+  background: $primary;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.background-image {
+  background-image: url('/Modal.jpg');
+  background-size: 400px 400px;
+  width: 400px;
+  height: 400px;
+}
+
+/*@import "modules/layout";*/
+/*@import "modules/forms";*/
+/*@import "modules/tables";*/
+/*@import "modules/components";*/
+/*@import "modules/responsive";*/
+@import "modules/fonts";
+
+@font-face {
+ font-family: 'SourceSansPro-Light';
+ src: url('/public/fonts/sourcesanspro-light.woff2') format('woff2'),
+      url('/public/fonts/sourcesanspro-light.woff') format('woff');
+ font-weight: normal;
+ font-style: normal;
+}
